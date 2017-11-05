@@ -30,7 +30,6 @@ import Helmet from 'react-helmet';
 // Import required modules
 import routes from '../client/routes';
 import { fetchComponentData } from './util/fetchData';
-import posts from './routes/post.routes';
 import serverConfig from './config';
 
 // Apply body Parser and server public assets and routes
