@@ -24,8 +24,8 @@ export class App extends Component {
     return (
       <div>
         <Helmet
-          title="MERN Starter - Blog App"
-          titleTemplate="%s - Blog App"
+          title="Hearth"
+          titleTemplate="Hearth"
           meta={[
             { charset: 'utf-8' },
             {
@@ -37,9 +37,17 @@ export class App extends Component {
               content: 'width=device-width, initial-scale=1',
             }
           ]}
+          script={[
+            {"src": "https://code.jquery.com/jquery.min.js", "type": "text/javascript"},
+            {"src": "/js/scrollreveal.min.js", "type": "text/javascript"},
+            {"src": "/js/bootstrap.min.js", "type": "text/javascript"},
+            {"src": "/js/jquery.magnific-popup.min.js", "type": "text/javascript"},
+            {"src": "/js/creative.min.js", "type": "text/javascript"}
+          ]}
           link={[
               {"rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"},
               {"rel": "stylesheet", "href": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"},
+              {"rel": "stylesheet", "href": "/css/magnific-popup.css"},
               {"rel": "stylesheet", "href": "/css/creative.min.css"},
           ]}
         />

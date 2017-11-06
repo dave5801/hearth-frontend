@@ -37,10 +37,34 @@ app.use(compression());
 app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
 app.use(Express.static(path.resolve(__dirname, '../dist')));
+
+
 //css style sheets
 app.use('/css/creative.min.css', (req, res) => {
-  res.sendfile(path.resolve(__dirname, '../client/css/creative.min.css'));
+  res.sendFile(path.resolve(__dirname, '../client/css/creative.min.css'));
 })
+app.use('/css/magnific-popup.css', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/css/magnific-popup.css'));
+})
+//js scripts
+app.use('/js/creative.min.js', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/js/creative.js'));
+})
+app.use('/js/bootstrap.min.js', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/js/bootstrap.min.js'));
+})
+app.use('/js/scrollreveal.min.js', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/js/scrollreveal.min.js'));
+})
+app.use('/js/jquery.magnific-popup.min.js', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/js/jquery.magnific-popup.min.js'));
+})
+
+//imgs
+app.use('/imgs/mittens.jpg', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/imgs/mittens-min.jpg'));
+})
+
 // Render Initial HTML
 const renderFullPage = (html, initialState) => {
   const head = Helmet.rewind();

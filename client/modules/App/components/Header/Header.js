@@ -9,11 +9,28 @@ const Header = React.createClass({
       isOpen: false
     };
   },
-
+  componentDidMount() {
+    $('#scrollRoot').scrollspy({
+      target: '.navbar-fixed-top',
+      offset: 51
+    });
+    $(document).on('click', 'a.page-scroll', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+    });
+    $('#mainNav').affix({
+      offset: {
+        top: 100
+      }
+    })
+  },
   render() {
     return (
-      <div>
-        <Navbar id="mainNav" className="navbar-fixed-top affix">
+      <div id="scrollRoot">
+        <Navbar id="mainNav" fixedTop fluid>
           <Navbar.Header>
             <a className="navbar-brand page-scroll" href="#">{config.app.title}</a>
             <Navbar.Toggle>

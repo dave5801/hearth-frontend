@@ -1,0 +1,15 @@
+.header-content {
+    padding-top: 35px;
+}
+
+.header-content-inner {
+    background-color: rgba(204, 204, 204, 0.5); height: 425px; padding-top: 55px;
+}
+
+header {
+    height: 100vh;
+}
+
+.tall {
+    height: 700px;
+}
