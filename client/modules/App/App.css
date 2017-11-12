@@ -3,3 +3,7 @@
   -webkit-box-shadow: none !important;
   box-shaow: none !important;
 }
+
+.fill-page {
+  min-height: 90vh;
+}

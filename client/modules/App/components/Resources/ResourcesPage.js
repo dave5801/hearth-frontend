@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router';
-
-const ResourceList = React.createClass({
+import { Link } from 'react-router';
+const ResourcesPage = React.createClass({
   getInitialState() {
     return {
       resources: []
@@ -48,7 +47,7 @@ const ResourceList = React.createClass({
   }
 });
 
-export default ResourceList;
+export default ResourcesPage;
 
 
 let mockResults = [

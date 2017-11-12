@@ -53,7 +53,7 @@ export class App extends Component {
         />
         <Header
         />
-        <div className={styles.container}>
+        <div className={"fill-page"}>
           {this.props.children}
         </div>
         <Footer />

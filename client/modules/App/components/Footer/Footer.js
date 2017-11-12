@@ -6,7 +6,7 @@ export function Footer() {
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-12">
-          <p className="text-center">&copy; 2017 &middot; {config.app.title}</p>
+          <p className="text-center">Copyright © {config.app.title} 2017</p>
         </div>
       </div>
     </div>

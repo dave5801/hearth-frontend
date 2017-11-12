@@ -1,0 +1,18 @@
+.contact-row {
+  background-color: #1C2225;
+  color: white;
+}
+
+.contact-heading {
+  padding-top: 35px;
+}
+
+.contact-i {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; 
+}
