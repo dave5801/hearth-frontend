@@ -1,0 +1,14 @@
+#main-nav {
+  background-color: rgba(117, 190, 218, 0.5);
+}
+.black-header {
+  background-color: #1C2225 !important;
+}
+
+.black-header .navbar-toggle {
+  color: rgba(255,255,255,.7) !important;
+}
+
+.black-header .navbar-right a{
+  color: rgba(255,255,255,.7) !important;
+}
